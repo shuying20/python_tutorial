@@ -7,4 +7,4 @@ My name is yingying
 - Tunghai University
 - Global MBA
 
-End of discussion
+End of discussion cya
