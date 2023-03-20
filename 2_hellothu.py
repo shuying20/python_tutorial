@@ -4,4 +4,4 @@
 
 #3.Output
 
-print("Hello THU!")
+print("Hi Tunghai :<")
