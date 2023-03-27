@@ -12,7 +12,7 @@ print(raw_data)
 print(raw_data.info())
 
 # 2. Process
-sorted = raw_data["Price"].sort_values()
+sorted = raw_data.sort_values("Price", ascending= False)
 
 # 3. Output
 print(sorted)
