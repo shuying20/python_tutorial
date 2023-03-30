@@ -12,7 +12,7 @@ print(raw_data)
 print(raw_data.info())
 
 # 2. Process
-sorted = raw_data.sort_values("Price", ascending= False)
+raw_data.sort_values(["Menu"],axis=0,inplace=True)
 
 # 3. Output
-print(sorted)
+print(raw_data)
