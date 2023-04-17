@@ -15,23 +15,29 @@ answer = my_add(input)
 print(f'Answer: {answer}')
 
 #MULTIPLY
-def my_add (input):
+def my_multiply (input):
     sum = 1
     for x in input:
         sum *= int(x)
     return sum
 
-input = [20,40,600]
-answer = my_add(input)
+input = [20,23,18]
+answer = my_multiply(input)
 print(f'Answer: {answer}')
 
 #STAND DEV
-def my_add (input):
-    sum = 1
+def my_sd (input):
+    print(f'Input : {input}')
+    lenght = len(input)
+    sum = 0
+    mean = statistics.mean(input)
+    print(f'Mean : {mean}')
     for x in input:
-        sum *= int(x)
+        sum += (int(x)-mean)**2
+    sum = sum / lenght
+    output = math.sqrt(sum)
     return sum
 
-input = [20,40,600]
-answer = my_add(input)
+input = [20,23,18]
+answer = my_sd (input)
 print(f'Answer: {answer}')
