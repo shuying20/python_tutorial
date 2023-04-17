@@ -36,7 +36,7 @@ def my_sd (input):
         sum += (int(x)-mean)**2
     sum = sum / lenght
     output = math.sqrt(sum)
-    return sum
+    return output
 
 input = [20,23,18]
 answer = my_sd (input)
