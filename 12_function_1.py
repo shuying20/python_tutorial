@@ -40,4 +40,6 @@ def my_sd (input):
 
 input = [20,23,18]
 answer = my_sd (input)
+answer = round(answer, 2)
 print(f'Answer: {answer}')
+
