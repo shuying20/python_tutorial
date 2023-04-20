@@ -13,7 +13,7 @@ def my_covariance(input_x, input_y):
     meany = statistics.mean(input_y)
     print(f'Mean X: {meanx},', f'Mean Y: {meany}')
 
-    sum = 0
+    
     for a in range(len(input_x)):
         cov += (input_x[a]-meanx)*(input_y[a]-meany)
     cov= cov/n
