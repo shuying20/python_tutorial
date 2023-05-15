@@ -1,0 +1,8 @@
+import spacy
+
+nlp = spacy.load("en_core_web_sm")
+doc =  nlp("The final Bugatti Veyron Super Sport ever built is currently up for sale in the UK and while no asking price has been made public, it will no doubt be a multi-million dollar affair.While Bugatti launched a plethora of special edition variants of the Veyron during its production run, the Super Sport was the most special. In fact, it set a new production car top speed record after hitting 431.072 km/h (267.8 mph) at the Ehra-Lessien test track in 2010. Just 48 were made and this is the last one. This particular Veyron Super Sport is clad in Matte Black paint and also features black wheels and red brake calipers. The interior is dominated by bright red Carmine leather with various carbon fiber accents, including on the doors and center console. The cabin also includes matching Carmine Red carpeting and floor mats.Tom Hartley Jnr is selling the French hypercar and notes that it has been routinely serviced by Bugatti London every 12 months. It has only ever been driven 1,246 miles (2,005 km) and has an extended Bugatti warranty until January 2022.It is being sold with the original owner’s handbook/service booklet, spare key, speed key, PDA, car cover, battery conditioner, first aid kit, towing eye, and a history file that includes its original Configuration form and a signed Bugatti certificate confirming it as the last Veyron Super Sport ever manufactured.")
+
+for ent in doc.ents:
+    if ent.label_ != "ORG": continue
+    print(ent.text, ent.start_char, ent.end_char, ent.label_)
